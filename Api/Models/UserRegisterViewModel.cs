@@ -26,7 +26,7 @@ namespace Api.Models
         public string Password { get; set; }
 
         [Required]
-        [Compare(nameof(Password))]
+        [Compare(nameof(Password), ErrorMessage = "Пароли не совпадают")]
         [DataType(DataType.Password)]
         public string PasswordConfirm { get; set; }
 
