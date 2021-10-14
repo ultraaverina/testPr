@@ -1,0 +1,35 @@
+﻿@model UserRegisterViewModel 
+@{
+
+}
+
+<form action="@Url.Action("Register")" method="post">
+    <div class="form-group">
+        <label asp-for="FIO"></label>
+        <input asp-for="FIO" />
+        <span asp-validation-for="FIO"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" />
+        <span asp-validation-for="Phone"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PasswordConfirm"></label>
+        <input asp-for="PasswordConfirm" />
+        <span asp-validation-for="PasswordConfirm"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Зарегистрироваться" />
+    </div>
+</form>
