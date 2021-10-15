@@ -1,7 +1,17 @@
-﻿@{
+﻿@using System.Security.Claims
+
+@{
     ViewData["Title"] = "Личный кабинет";
 }
 
 <div class="text-center">
-    <p>Личный кабинет пользователя</p>
+   <p>ФИО пользователя:</p>
+    <p>Номер телефона:</p>
+    <p>E-mail:</p>
+   <p>	Дата последней авторизации:</p>
+
+   
+    <form asp-action="Exit">
+        <input type="submit" value="Выход">
+    </form>
 </div>
